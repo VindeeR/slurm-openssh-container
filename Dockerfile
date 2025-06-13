@@ -98,7 +98,6 @@ RUN mkdir /var/run/sshd \
 RUN mkdir -p /tmp/scratch/group/root
 
 # Set the locale. Taken from http://jaredmarkell.com/docker-and-locales/
-
 RUN sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen \
     && locale-gen
 
